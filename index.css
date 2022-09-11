@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  --text-primary: black;
+  --text-secondary: white;
+  --bg-primary: #23232e;
+  --bg-secondary: #141418;
+  --transition-speed: 1s;
+  --drawer-color: #0ea5e9;
+  --drawer-width: clamp(210px, 22vw, 325px);
+  --nav-bg-1: #f8f8f8;
+  --nav-color-1: #c9c9c9;
+  --nav-color-2: #62daff6e;
+  --blue-1: #084c61;
+  --gh-avatar: url("https://github.com/christianiredia.png");
+  --gh-avatar2: url("https://github.com/james.png");
+  --gh-avatar3: url("https://github.com/bob.png");
+  --gh-avatar4: url("https://github.com/alice.png");
+  --gh-avatar5: url("https://github.com/amy.png");
+  --content-gray: rgb(235, 235, 235);
+  --transition-notDrawer: margin-left 0.4s ease-in;
+  --transition-drawer: width 0.4s ease-in;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-areas:
+    "drawer nav nav nav"
+    "drawer content content content";
+  grid-template-rows: 0.8fr 4fr;
+  grid-template-columns: 5rem 1fr 1fr 1fr;
+}
+.drawer {
+  grid-area: drawer;
+  background-color: var(--drawer-color);
+  width: 5rem;
+  position: fixed;
+  transition: var(--transition-drawer);
+  overflow: hidden;
+  height: 100vh;
+}
+
+.drawer:hover {
+  width: var(--drawer-width);
+}
+
+.drawer:hover > .menuItem > h1 {
+  display: inline;
+}
+
+.menuItem > h1 {
+  display: none;
+}
+
+.menuItem {
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.menuItem > * {
+  cursor: pointer;
+}
+.navbar {
+  grid-area: nav;
+}
+
+.content {
+  grid-area: content;
+}
