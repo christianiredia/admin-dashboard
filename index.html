@@ -9,252 +9,158 @@
     <link rel="stylesheet" href="reset.css" />
   </head>
   <body>
-    <!-- App Drawer -->
-    <div class="drawer">
-      <div class="dashboard menuItem">
-        <img src="./images/logo.png" alt="" />
-        <h1>Dashboard</h1>
-      </div>
-      <div class="menuItem">
-        <img src="./images/home.png" alt="" />
-
-        <h1>Home</h1>
-      </div>
-      <div class="menuItem">
-        <img src="./images/profile.png" alt="" />
-        <h1>Profile</h1>
-      </div>
-      <div class="menuItem">
-        <img src="./images/message.png" alt="" />
-        <h1>Messages</h1>
-      </div>
-      <div class="menuItem">
-        <img src="./images/history.png" alt="" />
-        <h1>History</h1>
-      </div>
-      <div class="menuItem">
-        <img src="./images/tasks.png" alt="" />
-        <h1>Tasks</h1>
-      </div>
-      <div class="menuItem">
-        <img src="./images/community.png" alt="" />
-        <h1>Communities</h1>
-      </div>
-      <!-- Need extra spacing, so nth child -->
-      <div class="menuItem">
-        <img src="./images/settings.png" alt="" />
-        <h1>Settings</h1>
-      </div>
-      <div class="menuItem">
-        <img src="./images/support.png" alt="" />
-        <h1>Support</h1>
-      </div>
-      <div class="menuItem">
-        <img src="./images/privacy.png" alt="" />
-        <h1>Privacy</h1>
-      </div>
-    </div>
-
-    <!-- Navbar -->
-    <div class="navbar">
-      <!-- Top Section -->
-      <div class="topNav">
-        <!-- Search icon and search bar -->
-        <div class="search">
-          <div class="menuItem">
-            <img src="./images/magnify.png" alt="" />
+    <div class="container">
+      <div class="header">
+        <div class="top-header">
+          <div class="search">
+            <img src="./images/magnify.png" class="magnify" alt="" />
+            <form action="">
+              <input type="text" />
+            </form>
           </div>
-          <input type="text" name="search" />
+          
+            <div class="presence">
+              <img src="./images/bell-ring-outline.png" class="bell" alt="" />
+              <img
+                src="https://github.com/christianiredia.png"
+                class="profile-image"
+                alt=""
+              />
+              <p class="user-name">Christian Iredia</p>
+            </div>
+          
+          
         </div>
-        <div class="account">
-          <div class="menuIcon">
-            <img src="./images/bell-ring-outline.png" alt="" />
-          </div>
-          <!-- Avatar with github -->
-          <div class="gh-avatar"></div>
-          <!-- Our username -->
-          <p class="name">Coding with Christian</p>
+        
+       
+        <div class="account-info">
+          <img
+            src="https://github.com/christianiredia.png"
+            class="profile-image"
+            alt=""
+          />
+          <p class="greeting-text">
+            <span class="bold">Hi there,
+            <br />
+            Christian Iredia (@christianiredia)</span class="bold">
+          </p>
+        </div>
+        <div class="header-buttons">
+          <button type="button">New</button>
+          <button type="button">Upload</button>
+          <button type="button">Share</button>
         </div>
       </div>
-      <!-- Bottom Section -->
-      <div class="bottom">
-        <!-- Profile Details -->
-        <div class="profile">
-          <div class="gh-avatar"></div>
-          <div class="profile-name">
-            <p class="greeting">Hi there</p>
-            <p class="name">
-              Christian <span class="username">(@christianiredia)</span>
-            </p>
-          </div>
-        </div>
-        <!-- Button section -->
-        <div class="buttons">
-          <button class="btn">New</button><button class="btn">Upload</button
-          ><button class="btn">Share</button>
-        </div>
+      <div class="sidebar">
+        <img src="./images/logo.png" alt="" class="sidebar-top sidebar-images">
+        <div class="sidebar-top sidebar-title">Dashboard</div>
+        <img src="./images/home.png" alt="" class="sidebar-images">
+        <div class="sidebar-title">Home</div>
+        <img src="./images/profile.png" alt="" class="sidebar-images">
+        <div class="sidebar-title">Profile</div>
+        <img src="./images/message.png" alt="" class="sidebar-images">
+        <div class="sidebar-title">Messages</div>
+        <img src="./images/history.png" alt="" class="sidebar-images">
+        <div class="sidebar-title">History</div>
+        <img src="./images/tasks.png" alt="" class="sidebar-images">
+        <div class="sidebar-title">Tasks</div>
+        <img src="./images/community.png" alt="" class="sidebar-images">
+        <div class="sidebar-title">Communities</div>
+        <img src="./images/settings.png" alt="" class="sidebar-images">
+        <div class="sidebar-title">Settings</div>
+        <img src="./images/support.png" alt="" class="sidebar-images">
+        <div class="sidebar-title">Supoort</div>
+        <img src="./images/privacy.png" alt="" class="sidebar-images">
+        <div class="sidebar-title">Privacy</div>
       </div>
-    </div>
-
-    <!-- Main Content -->
-    <main class="content">
-      <div class="projects">
-        <h3>Your Projects</h3>
-        <!-- Section for all project cards -->
-        <div class="cards">
-          <!-- Each individual card, we need 6 cards -->
+      <div class="main-content">
+        <div class="projects">
+          <div class="projects-title">
+            <h1>Your Projects</h1>
+          </div>
           <div class="card">
-            <h5 class="card-title">Super Cool Projects</h5>
-            <p class="card-text">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod,
-              ad!
-            </p>
-            <div class="icons">
-              <img src="./images/star-plus-outline.png" alt="" />
-              <img src="./images/eye-plus-outline.png" alt="" />
-              <img src="./images/source-fork.png" alt="" />
+            <h2>Super Cool Project</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error temporibus ipsum molestias consectetur, ducimus quaerat!</p>
+            <div class="projects-images">
+              <img src="./images/star-plus-outline.png" alt="" class="star">
+              <img src="./images/eye-plus-outline.png" alt="" class="eye">
+              <img src="./images/source-fork.png" alt="" class="share">
             </div>
           </div>
-          <!-- Each individual card, we need 6 cards -->
           <div class="card">
-            <h5 class="card-title">Less Cool Project</h5>
-            <p class="card-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-              eveniet temporibus hic nisi laborum suscipit.
-            </p>
-            <div class="icons">
-              <img src="./images/star-plus-outline.png" alt="" />
-              <img src="./images/eye-plus-outline.png" alt="" />
-              <img src="./images/source-fork.png" alt="" />
+            <h2>Less Cool Project</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo praesentium eius recusandae pariatur aliquid dolores ducimus rerum. Hic quia aliquid excepturi assumenda a minus tempore.</p>
+            <div class="projects-images">
+              <img src="./images/star-plus-outline.png" alt="" class="star">
+              <img src="./images/eye-plus-outline.png" alt="" class="eye">
+              <img src="./images/source-fork.png" alt="" class="share">
             </div>
           </div>
-          <!-- Each individual card, we need 6 cards -->
           <div class="card">
-            <h5 class="card-title">Impossible App</h5>
-            <p class="card-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos,
-              adipisci tempore quae alias suscipit rem impedit quo enim
-              voluptate sint!
-            </p>
-            <div class="icons">
-              <img src="./images/star-plus-outline.png" alt="" />
-              <img src="./images/eye-plus-outline.png" alt="" />
-              <img src="./images/source-fork.png" alt="" />
+            <h2>Impossible App</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, nam!</p>
+            <div class="projects-images">
+              <img src="./images/star-plus-outline.png" alt="" class="star">
+              <img src="./images/eye-plus-outline.png" alt="" class="eye">
+              <img src="./images/source-fork.png" alt="" class="share">
             </div>
           </div>
-          <!-- Each individual card, we need 6 cards -->
           <div class="card">
-            <h5 class="card-title">Easy Peasy App</h5>
-            <p class="card-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-              impedit illum dolore similique possimus quae doloremque, iusto
-              aliquam ad fugit?
-            </p>
-            <div class="icons">
-              <img src="./images/star-plus-outline.png" alt="" />
-              <img src="./images/eye-plus-outline.png" alt="" />
-              <img src="./images/source-fork.png" alt="" />
+            <h2>Easy Peasy App</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti vitae aut a quasi minus fugiat fugit quis totam sed, dolorem ipsam ut itaque voluptas quam maxime modi!</p>
+            <div class="projects-images">
+              <img src="./images/star-plus-outline.png" alt="" class="star">
+              <img src="./images/eye-plus-outline.png" alt="" class="eye">
+              <img src="./images/source-fork.png" alt="" class="share">
             </div>
           </div>
-          <!-- Each individual card, we need 6 cards -->
           <div class="card">
-            <h5 class="card-title">Ad Blocker</h5>
-            <p class="card-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-              accusamus sint dolores, veniam nemo consectetur expedita vero
-              incidunt porro nulla sit vel vitae ipsam ducimus.
-            </p>
-            <div class="icons">
-              <img src="./images/star-plus-outline.png" alt="" />
-              <img src="./images/eye-plus-outline.png" alt="" />
-              <img src="./images/source-fork.png" alt="" />
+            <h2>Ad Blocker</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur laboriosam hic a provident in cum ratione sint voluptatibus architecto recusandae!</p>
+            <div class="projects-images">
+              <img src="./images/star-plus-outline.png" alt="" class="star">
+              <img src="./images/eye-plus-outline.png" alt="" class="eye">
+              <img src="./images/source-fork.png" alt="" class="share">
             </div>
           </div>
-          <!-- Each individual card, we need 6 cards -->
           <div class="card">
-            <h5 class="card-title">Money Maker</h5>
-            <p class="card-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quod
-              est exercitationem, perspiciatis non ducimus consequuntur debitis
-              quaerat enim itaque dolor magni vel commodi alias hic dicta illo
-              corporis dolores?
-            </p>
-            <div class="icons">
-              <img src="./images/star-plus-outline.png" alt="" />
-              <img src="./images/eye-plus-outline.png" alt="" />
-              <img src="./images/source-fork.png" alt="" />
+            <h2>Money Maker</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, dolorum consequuntur. Amet culpa sed aspernatur sit maxime magnam nisi dolores accusamus ab natus eaque, deleniti aut consequuntur ipsum.</p>
+            <div class="projects-images">
+              <img src="./images/star-plus-outline.png" alt="" class="star">
+              <img src="./images/eye-plus-outline.png" alt="" class="eye">
+              <img src="./images/source-fork.png" alt="" class="share">
             </div>
           </div>
         </div>
-
-        <!-- Side content - Announcements and trending -->
-
-        <!-- Announcements -->
         <div class="announcements">
-          <ul class="card">
-            <!-- List of individual Announcements -->
-            <li class="announcement">
-              <h5 class="card-title">Site Maintenance</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Cupiditate unde consectetur, doloremque facilis aliquam quidem.
-              </p>
-            </li>
-            <!-- List of individual Announcements -->
-            <li class="announcement">
-              <h5 class="card-title">Community Share Day</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Cupiditate unde consectetur, doloremque facilis aliquam quidem.
-              </p>
-            </li>
-            <!-- List of individual Announcements -->
-            <li class="announcement">
-              <h5 class="card-title">Updated Privacy Policy</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Cupiditate unde consectetur, doloremque facilis aliquam quidem.
-              </p>
-            </li>
-          </ul>
-        </div>
-
-        <!-- Trending Section -->
-        <div class="trending">
-          <h3>Trending</h3>
-          <ul class="card">
-            <!-- List of all trending people -->
-            <li class="trend trend-1">
-              <div class="gh-avatar2"></div>
-              <div class="account">
-                <p class="username">@tegan</p>
-                <p class="name card-text">World Peace Builder</p>
-              </div>
-            </li>
-            <li class="trend trend-2">
-              <div class="gh-avatar"></div>
-              <div class="account">
-                <p class="username">@christianiredia</p>
-                <p class="name card-text">Awesome Web designer</p>
-              </div>
-            </li>
-            <li class="trend trend-3">
-              <div class="gh-avatar3"></div>
-              <div class="account">
-                <p class="username">@kendall</p>
-                <p class="name card-text">Life Changing App</p>
-              </div>
-            </li>
-            <li class="trend trend-4">
-              <div class="gh-avatar4"></div>
-              <div class="account">
-                <p class="username">@alex</p>
-                <p class="name card-text">No Traffic Maker</p>
-              </div>
-            </li>
-          </ul>
+          <div class="announcements-title">
+            <h1>Announcements</h1>
+          </div>
+          <div class="card">
+            <h2>Site Maintenance</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id itaque quisquam tempore, reiciendis eius expedita?</p>
+            <hr>
+            <h2>Quarter 1 Financials</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus eligendi quas pariatur fugit velit facilis accusantium, nostrum suscipit mollitia illo?</p>
+            <hr>
+            <h2>Upcoming Profit Share Bonus</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores vitae aliquam quod culpa ratione maiores.</p>
+          </div>
+          <div class="trending">
+            <div class="trending-title">
+              <h1>Co Worker's Client Accounts</h1>
+            </div>
+            <div class="card">
+              <h2 class="coworker-clients-names">Thomas</h2>
+              <h2 class="coworker-clients-names">Lee</h2>
+              <h2 class="coworker-clients-names">Richard</h2>
+              <h2 class="coworker-clients-names">Sarah</h2>
+              <h2 class="coworker-clients-names">Hannah</h2>
+            </div>
+          </div>
         </div>
       </div>
-    </main>
+    </div>
   </body>
 </html>
